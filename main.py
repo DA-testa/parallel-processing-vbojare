@@ -2,7 +2,7 @@
 
 def parallel_processing(n, m, data):
     output = []
-    x = [o] * n 
+    x = [0] * n 
     t = 0
     i = 0
     j = 0
