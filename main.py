@@ -11,7 +11,7 @@ def parallel_processing(n, m, data):
         for i in range (len(x)):
             if x[i] == 0:
                 x[i] = data[j] - 1
-                output.append([i, x])
+                output.append([i, t])
                 if j < lan(data):
                     j += 1
                 else:
