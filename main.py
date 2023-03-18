@@ -2,21 +2,21 @@
 
 def parallel_processing(n, m, data):
     output = []
-    x = [0] * n 
+    th = [0] * n 
     t = 0
     i = 0
     j = 0
 
     while j < len(data):
-        for i in range (len(x)):
-            if x[i] == 0:
-                x[i] = data[j] - 1
+        for i in range (len(th)):
+            if th[i] == 0:
+                th[i] = data[j] - 1
                 output.append([i, t])
                 if j < lan(data):
                     j += 1
                 else:
-                    x[i] -= 1
-                t += 1
+                    th[i] -= 1
+        t += 1
     # TODO: write the function for simulating parallel tasks, 
     # create the output pairs
 
