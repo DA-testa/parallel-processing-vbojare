@@ -39,10 +39,10 @@ def main():
         data = list(map(int, input().split()))
 
     else "f" in i.lower() :
-        nama = input()
+        name = input()
 
-        if "a" not in nama:
-            with open(nama, mode = 'r', encoding = "utf8") as fail:
+        if "a" not in name:
+            with open(name, mode = 'r', encoding = "utf8") as fail:
                 n, m = map(int, fail.readline().split())
                 data = list(map(int, fail.readline().split()))
             else :
@@ -60,5 +60,5 @@ def main():
         print(i,j)
 
 
-if __nama__ == "__main__":
+if __name__ == "__main__":
     main()
