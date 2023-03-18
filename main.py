@@ -47,6 +47,9 @@ def main():
                 data = list(map(int, fail.readline().split()))
             else :
                 return
+    
+    else:
+        return
 
     
     # TODO: create the function
