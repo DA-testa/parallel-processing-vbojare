@@ -38,24 +38,23 @@ def main():
         n, m = map(int, input().split())
         data = list(map(int, input().split()))
 
-    else "f" in i.lower():
+    else "f" in i.lower() :
         nama = input()
 
         if "a" not in nama:
-            with open(nama, mode = 'r', enecoding = "utf8") as fail:
+            with open(nama, mode = 'r', encoding = "utf8") as fail:
                 n, m = map(int, fail.readline().split())
                 data = list(map(int, fail.readline().split()))
-            else:
+            else :
                 return
 
-    else:
-        return
-
+    
     # TODO: create the function
     result = parallel_processing(n,m,data)
     
     # TODO: print out the results, each pair in it's own line
-
+    for i, j in result :
+        print(i,j)
 
 
 if __name__ == "__main__":
