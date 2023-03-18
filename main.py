@@ -45,8 +45,8 @@ def main():
             with open(name, mode = 'r', encoding = "utf8") as fail:
                 n, m = map(int, fail.readline().split())
                 data = list(map(int, fail.readline().split()))
-            else :
-                return
+        else :
+            return
     
     else:
         return
